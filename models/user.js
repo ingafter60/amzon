@@ -8,7 +8,4 @@ const UserSchema = new Schema({
   address: { type: Schema.Types.ObjectId, ref: 'Address' }
 });
 
-module.exports = mongoose.model('User', 'UserSchema');
-
-
-
+module.exports = mongoose.model('User', UserSchema);
